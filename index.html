@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Man-Shop</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+        integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="shortcut icon" href="image/logo.png" type="image/x-icon">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        main: '#FF6000',
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+
+<body>
+    <!-- Hero section -->
+    <div class="bg-[url('/image/bg.jpg')] w-full h-[90vh] bg-cover px-20 text-white">
+        <div class="flex justify-between py-5">
+            <h1 class="text-3xl font-bold">Man-Shop</h1>
+            <ul class="flex justify-around items-center w-5/12 font-semibold">
+                <li>ABOUT US</li>
+                <li>FIND US</li>
+                <li>CONTACT US</li>
+                <li class="w-6 h-6 p-4 flex justify-center items-center rounded-full bg-white">
+                    <i class="fa-regular fa-user text-black"></i>
+                </li>
+                <li class="w-6 h-6 p-4 flex justify-center items-center rounded-full bg-white relative">
+                    <i class="fa-solid fa-cart-shopping text-black"></i>
+                    <span
+                        class="bg-[#FF230D] rounded-full w-3 h-3 p-2 flex justify-center items-center text-xs absolute top-[-4px] right-[-4px]">3</span>
+                </li>
+            </ul>
+        </div>
+        <div class="flex justify-between mt-12">
+            <div class="w-4/12">
+                <h1 class="text-5xl font-bold">REAL MAN ALWAYS CARE ABOUT HIS <span class="text-main">STYLE</span>
+                </h1>
+                <p class="my-5">Get the latest men's fashion and style trends, celebrity style photos, news, tips and
+                    advice from top experts of GQ.</p>
+                <button
+                    class="border-2 bg-transparent font-bold py-2 px-4 rounded-xl shadow-xl hover:bg-main duration-300">ORDER
+                    NOW</button>
+            </div>
+            <div class="relative z-[2]">
+                <div
+                    class="absolute bg-white text-main font-bold w-28 h-28 flex flex-col items-center justify-center rounded-full right-[26%] top-0 -z-[1]">
+                    <p class="text-xs">Start from</p>
+                    <p class="text-4xl font-bold">19$</p>
+                </div>
+                <div>
+                    <img src="image/hero.png" alt="hero.png" width="450" height="450" />
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Glasses section -->
+    <div class="relative px-20 py-7">
+        <button
+            class="bg-[#ecaf00] font-bold py-2 px-4 rounded-xl shadow-xl duration-300 absolute left-[46%] -top-[20px] hover:bg-main text-white">Best
+            Watch</button>
+        <div class="mt-5">
+            <ul class="flex justify-around w-6/12 mx-auto">
+                <li
+                    class="max-h-40 flex flex-col justify-between items-center cursor-pointer hover:scale-150 duration-300">
+                    <img src="image/product/product1.png" alt="" width="80">
+                    <span class="font-semibold text-main">Product1</span>
+                </li>
+                <li
+                    class="max-h-40 flex flex-col justify-between items-center cursor-pointer hover:scale-150 duration-300">
+                    <img src="image/product/product2.png" alt="" width="60" height="60">
+                    <span class="font-semibold text-main">Product2</span>
+                </li>
+                <li
+                    class="max-h-40 flex flex-col justify-between items-center cursor-pointer hover:scale-150 duration-300">
+                    <img src="image/product/product3.png" alt="" width="60" height="60">
+                    <span class="font-semibold text-main">Product3</span>
+                </li>
+                <li
+                    class="max-h-40 flex flex-col justify-between items-center cursor-pointer hover:scale-150 duration-300">
+                    <img src="image/product/product4.png" alt="" width="60" height="60">
+                    <span class="font-semibold text-main">Product4</span>
+                </li>
+                <li
+                    class="max-h-40 flex flex-col justify-between items-center cursor-pointer hover:scale-150 duration-300">
+                    <img src="image/product/product5.png" alt="" width="40" height="60">
+                    <span class="font-semibold text-main">Product5</span>
+                </li>
+                <li
+                    class="max-h-40 flex flex-col justify-between items-center cursor-pointer hover:scale-150 duration-300">
+                    <img src="image/product/product6.png" alt="" width="60" height="60">
+                    <span class="font-semibold text-main">Product6</span>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <!-- Category section -->
+    <div class="bg-[#fdf6ea] h-[64vh] py-10">
+        <div class="grid grid-cols-3 w-8/12 mx-auto gap-y-5">
+            <!-- Card1 -->
+            <div
+                class="w-64 h-40 py-3 px-4 flex rounded-lg bg-white shadow cursor-pointer hover:shadow-xl duration-300">
+                <div class="w-6/12">
+                    <h1 class="text-xl font-bold">ANY DAY OFFERS</h1>
+                    <p class="text-sm my-2">Special offer for special man</p>
+                    <p class="text-main font-semibold text-lg">From 10$</p>
+                </div>
+                <div class="w-6/12 relative z-[2]">
+                    <div class="bg-main rounded-full w-28 h-28 absolute -z-[1]">
+                    </div>
+                    <img src="image/category/shirt.png" alt="">
+                </div>
+            </div>
+            <!-- Card2 -->
+            <div
+                class="w-64 h-40  py-3 px-4 flex bg-main text-white rounded-lg shadow hover:shadow-xl cursor-pointer duration-300">
+                <div class="w-6/12">
+                    <h1 class="text-xl font-bold">ANY DAY OFFERS</h1>
+                    <p class="text-sm my-2">Special offer for special man</p>
+                    <p class="text-black font-semibold text-lg">From 10$</p>
+                </div>
+                <div class="w-6/12 relative z-[2]">
+                    <div class="rounded-full w-28 h-28 absolute -z-[1] bg-white">
+                    </div>
+                    <img src="image/category/shoes.png" alt="">
+                </div>
+            </div>
+            <!-- Card3 -->
+            <div
+                class="w-64 h-40 py-3 px-4 flex rounded-lg bg-white shadow cursor-pointer hover:shadow-xl duration-300">
+                <div class="w-6/12">
+                    <h1 class="text-xl font-bold">ANY DAY OFFERS</h1>
+                    <p class="text-sm my-2">Special offer for special man</p>
+                    <p class="text-main font-semibold text-lg">From 10$</p>
+                </div>
+                <div class="w-6/12 relative z-[2]">
+                    <div class="bg-main rounded-full w-28 h-28 absolute -z-[1]">
+                    </div>
+                    <img src="image/category/glasses.png" alt="">
+                </div>
+            </div>
+        </div>
+        <!-- Bawah -->
+        <div class="flex justify-center gap-x-10 mt-5">
+            <!-- Card 4 (bawah) -->
+            <div
+                class="w-96 h-40 py-3 px-4 flex rounded-lg bg-white shadow cursor-pointer hover:shadow-xl duration-300">
+                <div class="w-6/12 flex flex-col justify-between">
+                    <h1 class="text-xl font-bold">SPECIAL OFFER IN DECEMBER</h1>
+                    <button
+                        class="bg-main w-6/12 text-white font-bold py-2 px-2 rounded-xl shadow hover:bg-main duration-300">
+                        DETAIL
+                    </button>
+                </div>
+                <div class="w-6/12 relative z-[2]">
+                    <div class="bg-main rounded-full w-32 h-32 absolute -z-[1] right-[10%]">
+                    </div>
+                    <img src="image/category/sweater.png" alt="">
+                </div>
+            </div>
+            <!-- Card 5 (bawah) -->
+            <div
+                class="w-96 h-40 py-3 px-4 flex rounded-lg bg-white shadow cursor-pointer hover:shadow-xl duration-300">
+                <div class="w-6/12 flex flex-col justify-between">
+                    <h1 class="text-xl font-bold">SPECIAL OFFER IN DECEMBER</h1>
+                    <button
+                        class="bg-main w-6/12 text-white font-bold py-2 px-2 rounded-xl shadow hover:bg-main duration-300">
+                        DETAIL
+                    </button>
+                </div>
+                <div class="w-6/12 relative z-[2]">
+                    <div class="bg-main rounded-full w-32 h-32 absolute -z-[1] right-[10%]">
+                    </div>
+                    <img src="image/category/pants.png" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Banner section -->
+    <div class="bg-gradient-to-r from-[#ecaf00] to-[#e63825] w-full h-[30vh] relative px-20">
+        <div class="w-5/12 flex justify-center gap-x-10 mx-auto">
+            <img src="image/poster.jpg" alt="" width="35%">
+            <div class="text-white font-bold text-2xl py-5">
+                <p>What are you waiting for? Order now to Get Special Price</p>
+                <button
+                    class="border-2 bg-transparent font-bold py-2 px-4 rounded-xl shadow-xl hover:bg-main duration-300 text-sm mt-5">GET
+                    OFFER</button>
+            </div>
+        </div>
+    </div>
+    <!-- Final Section -->
+    <div class="bg-[#fdf6ea] h-[64vh] py-20 flex px-20">
+        <div class="w-5/12 mx-auto">
+            <div class="grid grid-cols-2 gap-x-6">
+                <div class="bg-white h-24 rounded shadow relative">
+                    <div
+                        class="bg-[#1fb1ef] w-8 h-8 rounded-full flex justify-center items-center shadow shadow-[#1fb1ef] absolute -left-[10px] -top-[10px]">
+                        <i class="fa-brands fa-twitter text-white"></i>
+                    </div>
+                    <div class="pl-6 pr-3 pt-1">
+                        <h1 class="font-bold mb-2">Raaooll</h1>
+                        <p>Nice shirt and pants , men store fast shipping</p>
+                    </div>
+                </div>
+                <div class="bg-white h-24 rounded shadow relative">
+                    <div
+                        class="bg-[#1fb1ef] w-8 h-8 rounded-full flex justify-center items-center shadow shadow-[#1fb1ef] absolute -left-[10px] -top-[10px]">
+                        <i class="fa-brands fa-twitter text-white"></i>
+                    </div>
+                    <div class="pl-6 pr-3 pt-1">
+                        <h1 class="font-bold mb-2">Khalid Kasimiri</h1>
+                        <p>Halal glasses for man , dont forget to join live</p>
+                    </div>
+                </div>
+            </div>
+            <div class="grid grid-cols-3 mt-5 gap-x-5">
+                <div class="bg-white h-40 pt-1 rounded shadow relative">
+                    <div
+                        class="bg-[#1fb1ef] w-8 h-8 rounded-full flex justify-center items-center shadow shadow-[#1fb1ef] absolute -left-[10px] -top-[10px]">
+                        <i class="fa-brands fa-facebook text-white"></i>
+                    </div>
+                    <div class="pl-6 pr-3">
+                        <h1 class="font-bold mb-2">Juned junaidi</h1>
+                        <p>That's a great sweater i've used , owner is fast response</p>
+                    </div>
+                </div>
+                <div class="bg-white h-40 pt-1 rounded shadow relative">
+                    <div
+                        class="bg-[#1fb1ef] w-8 h-8 rounded-full flex justify-center items-center shadow shadow-[#1fb1ef] absolute -left-[10px] -top-[10px]">
+                        <i class="fa-brands fa-facebook text-white"></i>
+                    </div>
+                    <div class="pl-6 pr-3">
+                        <h1 class="font-bold mb-2">Juned junaidi</h1>
+                        <p>That's a great sweater i've used , owner is fast response</p>
+                    </div>
+                </div>
+                <div class="bg-white h-40 pt-1 rounded shadow relative">
+                    <div
+                        class="bg-[#1fb1ef] w-8 h-8 rounded-full flex justify-center items-center shadow shadow-[#1fb1ef] absolute -left-[10px] -top-[10px]">
+                        <i class="fa-brands fa-facebook text-white"></i>
+                    </div>
+                    <div class="pl-6 pr-3">
+                        <h1 class="font-bold mb-2">Juned junaidi</h1>
+                        <p>That's a great sweater i've used , owner is fast response</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="w-6/12 bg-[url('/image/video.jpg')] bg-cover text-white p-4 relative">
+            <h2 class="text-2xl font-semibold w-6/12">See roberto carlos fashion week , New Fork Fashion Week</h2>
+            <i class="fa-regular fa-circle-play absolute left-[50%] text-5xl cursor-pointer"></i>
+        </div>
+    </div>
+    <div class="w-full h-14 bg-red-500 px-40 flex items-center justify-between text-white">
+        <div class="flex items-center w-7/12 justify-around">
+            <h1 class="text-2xl font-bold">Man-Shop</h1>
+            <span class="text-base flex items-center">
+                <i class="fa-brands fa-whatsapp text-2xl mr-2"></i>0887-4321-1234
+            </span>
+            <span class="text-base flex items-center">
+                <i class="fa fa-store text-2xl mr-2"></i></i>Jl.senggol no.9
+            </span>
+        </div>
+        <div class="w-2/12 justify-around flex py-3">
+            <i class="fa-brands fa-facebook"></i>
+            <i class="fa-brands fa-twitter"></i>
+            <i class="fa-brands fa-youtube"></i>
+            <i class="fa-brands fa-instagram"></i>
+        </div>
+    </div>
+
+    <!-- Copyright Fatah -->
+
+</body>
+
+</html>
